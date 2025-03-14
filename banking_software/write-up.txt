@@ -1,0 +1,13 @@
+Function Testing:
+* Cannot test the virtual toString function in the BankAccount class because it is a pure virtual function, i.e. has no implementation specific to 
+a "BankAccount"
+* Cannot test destructors in BankAccount, CheckingAccount, or SavingsAccount because they have default implementation
+
+Issues while testing:
+* I got confused when my getBalance() functions in my bankaccount test suite weren't working but it was only because I got confused by the 
+constructors themselves. I was setting the interest rate to be what I wanted the initial balance to be. 
+                                
+Most difficult testing: 
+* It was more difficult to test the toString() functions because a) we couldn't test it at all in the base class and b) matching the syntax was 
+awkward, and I had to be careful not to have a typo, then it still failed because of float length differences. I added extra annexed 0's at the
+end to fix this!
